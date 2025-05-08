@@ -1,0 +1,99 @@
+/* Base Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9edc9;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #ccd5ae;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #fefae0;
+}
+
+/* Circular Image */
+#about img {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Arrow styling */
+.down-arrow {
+    font-size: 3rem;
+    color: #d4a373;
+    display: inline-block;
+    margin-top: 40px;
+    animation: bounce 2s infinite;
+    text-decoration: none;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+footer {
+    background-color: #faedcd;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #d4a373;
+}
+
+p {
+    color: #333;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
